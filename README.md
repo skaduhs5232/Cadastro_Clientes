@@ -8,6 +8,7 @@ Esta aplicação é um sistema de cadastro de clientes desenvolvido em TypeScrip
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **Node.js**: Ambiente de execução JavaScript server-side.
 - **npm**: Gerenciador de pacotes para Node.js.
+- **MongoDB**: Banco de dados nao relacional.
 
 ## Pré-requisitos
 
@@ -45,13 +46,28 @@ npm install
 
 ## Executando a Aplicação
 
-Para iniciar a aplicação em modo de desenvolvimento, execute o seguinte comando:
+Para iniciar a api, execute o seguinte comando no terminal da pasta backend:
 
 ```bash
-npm start
+npm run dev
+```
+
+Para iniciar o front, execute o seguinte comando no terminal da pasta frontend:
+
+```bash
+npm run dev
 ```
 
 A aplicação será iniciada e estará disponível no endereço `http://localhost:3000`.
+
+## Executando o banco de dados
+
+Para iniciar o Prisma Studio:
+
+```bash
+npx prisma studio
+```
+
 
 ## Estrutura do Projeto
 
@@ -71,9 +87,19 @@ Cadastro_Clientes/
 │   ├── tsconfig.app.json  # Configurações do TypeScript
 │   ├── package.json       # Dependências e scripts do npm
 │   └── ...                # Outros arquivos e pastas
-└── ...
-```
+└── BackEnd/
+  ├── src/
+  │   ├── controllers/   # Controladores da aplicação
+  │   ├── models/        # Modelos de dados
+  │   ├── routes/        # Definição das rotas da API
+  │   ├── services/      # Serviços da aplicação
+  │   ├── app.ts         # Configuração do aplicativo Express
+  │   └── ...            # Outros arquivos e pastas
+  ├── tsconfig.json      # Configurações do TypeScript
+  ├── package.json       # Dependências e scripts do npm
+  └── ...                # Outros arquivos e pastas
 
+```
 ## Scripts Disponíveis
 
 No diretório do projeto, você pode executar os seguintes scripts:
