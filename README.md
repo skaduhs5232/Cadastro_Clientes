@@ -109,10 +109,9 @@ No diretório do projeto, você pode executar os seguintes scripts:
 - `npm test`: Executa os testes da aplicação.
 - `npm run eject`: Remove a configuração de build do Create React App.
 
-## Contribuição
+## Layout
 
-Contribuições são sempre bem-vindas! Se você tiver sugestões ou encontrar problemas, por favor, abra uma issue ou envie um pull request.
+Como o projeto está atualmente.
 
-## Licença
+![image](https://github.com/user-attachments/assets/8637305a-cb11-402d-90cc-52accf569640)
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
